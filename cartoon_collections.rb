@@ -12,5 +12,8 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find {|i| i == "cheddar" || i == "gouda" || i == "camembert"}
+  # array.find {|i| i == "cheddar" || i == "gouda" || i == "camembert"}
+  # array.find {|i| i == cheese_types.each{|n| n}}
+  intersect = array & cheese_types
+  intersect[0]
 end
